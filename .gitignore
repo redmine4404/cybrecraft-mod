@@ -28,3 +28,7 @@ servers.dat
 .settings/
 
 .gradle/
+
+eclipse/config/
+
+.idea/
