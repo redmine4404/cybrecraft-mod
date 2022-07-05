@@ -1,0 +1,32 @@
+itemGroup.tructabs=truc mod
+
+
+item.TrucItem.name=machine
+item.Redminite.name=redminite ore
+item.redminite_sword.name=redminite sword 
+item.hearth.name=hearth
+item.hammer_upgrade.name=hammer upgrade
+item.hammer_pickaxe.name=redminite pickaxe
+item.cpu.name=cpu
+item.MagicStick.name=Magic Stick
+item.SheepMeat.name=Sheep meat
+item.CookedSheepMeat.name=Cooked Sheep Meat
+item.redminite_pickaxe.name=redminite pickaxe
+item.redminite_hammer.name=redminite hammer
+item.CompressedIronIngot.name=Compressed Iron Ingot
+
+item.CompressIronBoot.name=Compress iron Boot
+item.CompressIronLegging.name=Compress iron Legging
+item.CompressIronChestplate.name=Compress iron chestplate
+item.CompressIronHelmet.name=Compress iron Helmet
+
+item.CompressedIronSword.name=Compressed Iron Sword
+item.CompressedIronAxe.name=Compressed Iron Axe
+item.CompressedIronShovel.name=Compressed Iron Shovel
+item.CompressedIronPickaxe.name=Compressed Iron Pickaxe
+
+tile.SmelterBlock.name=Smelter Block
+tile.SmelterBlockEmpty.name=Smelter Block Empty
+tile.RedminiteOre.name=Redminite ore
+
+entity.BobEntity.name=Bob

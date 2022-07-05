@@ -1,0 +1,74 @@
+package fr.redmine.redmod.init;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import fr.redmine.redmod.redmod;
+import fr.redmine.redmod.items.redmod_pickaxe;
+import fr.redmine.redmod.items.redmod_sword;
+import fr.redmine.redmod.utils.Reference;
+import fr.redmine.redmod.utils.TutoTab;
+import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraft.item.ItemPickaxe;
+import net.minecraftforge.common.util.EnumHelper;
+import scala.tools.nsc.backend.icode.TypeKinds.REFERENCE;
+import fr.redmine.redmod.items.redminite_bucket;
+import fr.redmine.redmod.items.redmod_hammer;
+import fr.redmine.redmod.items.EnergyTanks;
+import fr.redmine.redmod.items.ItemCompressedIronArmor;
+import fr.redmine.redmod.items.MagicStick;
+import fr.redmine.redmod.items.SheepMeat;
+import fr.redmine.redmod.items.item_pickaxe;
+
+public class RegisterItems {
+	
+	public static ToolMaterial RedminiteMaterial = EnumHelper.addToolMaterial("redminite", 5, 5000, 15, 8, 22);
+	public static ArmorMaterial CompressedIronMaterials = EnumHelper.addArmorMaterial("compressedIron", 20, new int[]{5, 10, 8, 4}, 15);
+	public static Item truc, redminite, redminite_sword, redminite_pickaxe, hammer_upgrade, redminite_hammer, hearth, cpu, SheepMeat, CookedSheapMeat, CompressedIron, magicStick, CompressedIronPickack;
+    public static Item CompressedIronHelmet, CompressedIronChestPlate, CompressedIronLeggings, CompressedIronBoots; 
+    public static Item EnergyTanks;
+    
+    /* initialisation des item */
+   public static void init() {
+       truc = new Item().setUnlocalizedName("TrucItem").setCreativeTab(redmod.trucTabs).setTextureName(Reference.MOD_ID + ":truc");
+       redminite = new Item().setUnlocalizedName("Redminite").setCreativeTab(redmod.trucTabs).setTextureName(Reference.MOD_ID + ":redminite");
+       redminite_sword = new redmod_sword(RedminiteMaterial).setTextureName(Reference.MOD_ID + ":redminite_sword").setCreativeTab(redmod.trucTabs).setUnlocalizedName("redminite_sword");
+       redminite_pickaxe = new item_pickaxe(RedminiteMaterial).setTextureName(Reference.MOD_ID + ":redminite_pickaxe").setCreativeTab(redmod.trucTabs).setUnlocalizedName("redminite_pickaxe").setMaxDamage(3300);
+       hammer_upgrade = new Item().setUnlocalizedName("hammer_upgrade").setTextureName(Reference.MOD_ID + ":hammer_upgrade").setCreativeTab(redmod.trucTabs);
+       redminite_hammer = new redmod_hammer(Item.ToolMaterial.STONE).setUnlocalizedName("redminite_hammer").setCreativeTab(redmod.trucTabs).setMaxDamage(3000).setTextureName(Reference.MOD_ID + ":RedminiteHammer");
+       hearth = new Item().setUnlocalizedName("hearth").setTextureName(Reference.MOD_ID + ":hearth").setCreativeTab(redmod.trucTabs);
+       cpu = new Item().setUnlocalizedName("cpu").setTextureName(Reference.MOD_ID + ":cpu").setCreativeTab(redmod.trucTabs);
+       SheepMeat = new SheepMeat(3, 2, false).setUnlocalizedName("SheepMeat").setTextureName(Reference.MOD_ID + ":SheepMeat").setCreativeTab(redmod.trucTabs);
+       CookedSheapMeat = new SheepMeat(5, 5, false).setUnlocalizedName("CookedSheepMeat").setTextureName(Reference.MOD_ID + ":CookedSheepMeat").setCreativeTab(redmod.trucTabs);
+       magicStick = new MagicStick().setCreativeTab(redmod.trucTabs).setUnlocalizedName("MagicStick").setUnlocalizedName(Reference.MOD_ID + ":MackStick");
+       EnergyTanks = new EnergyTanks().setMaxDamage(5000).setMaxStackSize(1).setUnlocalizedName("Tanks").setCreativeTab(redmod.trucTabs);
+       CompressedIronPickack = new item_pickaxe(RedminiteMaterial);
+       
+       
+       CompressedIronHelmet = new ItemCompressedIronArmor(CompressedIronMaterials, 1, 0).setUnlocalizedName("CompressIronHelmet").setCreativeTab(redmod.trucTabs).setTextureName(Reference.MOD_ID + ":CompressIronHelmet");
+       CompressedIronChestPlate = new ItemCompressedIronArmor(CompressedIronMaterials, 1, 1).setUnlocalizedName("CompressIronChestplate").setCreativeTab(redmod.trucTabs).setTextureName(Reference.MOD_ID + ":CompressIronChestplate");
+       CompressedIronLeggings = new ItemCompressedIronArmor(CompressedIronMaterials, 1, 2).setUnlocalizedName("CompressIronLegging").setCreativeTab(redmod.trucTabs).setTextureName(Reference.MOD_ID + ":CompressIronLegging");
+       CompressedIronBoots = new ItemCompressedIronArmor(CompressedIronMaterials, 1, 3).setUnlocalizedName("CompressIronBoot").setCreativeTab(redmod.trucTabs).setTextureName(Reference.MOD_ID + ":CompressIronBoot");
+   }
+
+   public static void register(){
+
+       GameRegistry.registerItem(truc,"truc");
+       GameRegistry.registerItem(redminite, "redminite");
+       GameRegistry.registerItem(redminite_sword, "redminite_sword");
+       GameRegistry.registerItem(redminite_pickaxe, "redminite_pickaxe");
+       GameRegistry.registerItem(hammer_upgrade, "hammer_upgrade");
+       GameRegistry.registerItem(redminite_hammer, "redminite hammer");
+       GameRegistry.registerItem(hearth, "hearth");
+       GameRegistry.registerItem(cpu, "cpu");
+       GameRegistry.registerItem(SheepMeat, "SheapMeat");
+       GameRegistry.registerItem(CookedSheapMeat, "CookedSheapMeat");
+       GameRegistry.registerItem(magicStick, "MagicStick");
+       GameRegistry.registerItem(EnergyTanks, "EnergyTanks");
+       
+       GameRegistry.registerItem(CompressedIronBoots, "CompresIronBoot");
+       GameRegistry.registerItem(CompressedIronChestPlate, CompressedIronChestPlate.getUnlocalizedName().substring(5));
+       GameRegistry.registerItem(CompressedIronLeggings, "CompressLegging");
+       GameRegistry.registerItem(CompressedIronHelmet, "CompressHelmet");
+   }
+}

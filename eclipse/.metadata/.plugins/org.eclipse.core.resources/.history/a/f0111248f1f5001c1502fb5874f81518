@@ -1,0 +1,12 @@
+package fr.redmine.redmod.items;
+
+import net.minecraft.item.ItemFood;
+
+public class Sandwitch extends ItemFood{
+
+	public Sandwitch(int var, boolean bool) {
+		super(var, bool);
+		// TODO Auto-generated constructor stub
+	}
+
+}

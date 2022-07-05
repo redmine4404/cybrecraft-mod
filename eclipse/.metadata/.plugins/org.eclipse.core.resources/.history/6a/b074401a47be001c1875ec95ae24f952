@@ -1,0 +1,15 @@
+package fr.redmine.redmod.items;
+
+import net.minecraft.item.Item;
+
+public class EnergyTanks extends Item {
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	public void addInformation(ItemStack stack, EntityPlayer player, List lores, boolean b)
+	{
+	    if (stack.hasTagCompound() && stack.getTagCompound().hasKey("Uses"))
+	    {
+	        lores.add(Integer.toString(stack.getTagCompound().getInteger("Uses")));
+	    }
+	}
+}

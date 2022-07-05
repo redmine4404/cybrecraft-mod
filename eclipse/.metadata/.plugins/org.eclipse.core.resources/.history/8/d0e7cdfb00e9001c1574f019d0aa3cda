@@ -1,0 +1,30 @@
+package fr.redmine.redmod.utils;
+
+import java.awt.List;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.InventoryBasic;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+
+public class TanksUtils {
+	public static void hasEnergy(EntityPlayer player) {
+		InventoryPlayer inv = player.inventory;
+		int invsSize = inv.getSizeInventory();
+		for(int i = 0; !(invsSize == i); i++) {
+			ItemStack item = inv.getStackInSlot(i);
+		}
+	}
+public static int whatenrgyhasplayer(EntityPlayer player) {
+	int energy = 0;
+	InventoryPlayer inventory = player.inventory;
+	
+	
+	for(int i = 0; i < inventory.getSizeInventory(); i++) {
+		Item
+	}
+	return energy;
+}
+	
+}

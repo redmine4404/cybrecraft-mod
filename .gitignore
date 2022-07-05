@@ -1,0 +1,30 @@
+
+CyberCraft Workspace.iml
+
+CyberCraft Workspace.ipr
+
+CyberCraft Workspace.iws
+
+usernamecache.json
+
+usercache.json
+
+README.txt
+
+saves/
+
+*.txt
+
+logs/
+
+banned-ips.json
+
+*.json
+
+server.properties
+
+servers.dat
+
+.settings/
+
+.gradle/
