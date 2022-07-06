@@ -102,7 +102,6 @@ public class redmod {
     public void postInit(FMLPostInitializationEvent event) {
 
     }
-
    @SubscribeEvent
    @SideOnly(Side.CLIENT)
    public void onTick(TickEvent.ClientTickEvent event)

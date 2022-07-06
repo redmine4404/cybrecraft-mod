@@ -32,3 +32,9 @@ servers.dat
 eclipse/config/
 
 .idea/
+
+bin/
+
+config/
+
+world/
