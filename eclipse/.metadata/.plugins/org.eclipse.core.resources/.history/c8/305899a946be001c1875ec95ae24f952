@@ -1,7 +1,0 @@
-package fr.redmine.redmod.items;
-
-import net.minecraft.item.Item;
-
-public class EnergyTanks extends Item {
-
-}

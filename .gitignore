@@ -38,3 +38,5 @@ bin/
 config/
 
 world/
+
+.metadata/

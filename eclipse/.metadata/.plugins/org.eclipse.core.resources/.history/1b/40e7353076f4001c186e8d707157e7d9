@@ -1,5 +1,0 @@
-package fr.redmine.redmod.blocks;
-
-public class sandwitch_machine extends BlocksBase{
-
-}
