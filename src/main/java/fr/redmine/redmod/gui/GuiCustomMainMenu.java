@@ -566,7 +566,7 @@ public class GuiCustomMainMenu extends GuiScreen implements GuiYesNoCallback
         String s1 = "Copyright Mojang AB. Do not distribute!";
         this.drawString(this.fontRendererObj, s1, this.width - this.fontRendererObj.getStringWidth(s1) - 2, this.height - 10, -1);
         String s2 = Reference.MOD_NAME + " " + Reference.MOD_VERSION;
-        this.drawString(this.fontRendererObj, s2, 2, this.height - (6 * (this.fontRendererObj.FONT_HEIGHT + 1)), 16777215);
+        this.drawString(this.fontRendererObj, s2, 2, this.height - (6 * (this.fontRendererObj.FONT_HEIGHT + 1))+ 10, 16777215);
 
         if(this.field_92025_p != null && this.field_92025_p.length() > 0)
         {
