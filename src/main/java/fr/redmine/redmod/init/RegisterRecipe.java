@@ -14,6 +14,7 @@ public class RegisterRecipe {
         GameRegistry.addRecipe(new ItemStack(RegisterItems.hearth, 1), new Object[] {"rRr","RrR","rRr", 'R', Items.rotten_flesh, 'r', RegisterItems.redminite});
         GameRegistry.addRecipe(new ItemStack(RegisterItems.hammer_upgrade, 1), new Object[] {"ROR","OIO","ROR", 'I', Items.iron_pickaxe, 'R', RegisterItems.redminite, 'O', Blocks.planks});
         GameRegistry.addSmelting(RegisterItems.SheepMeat, new ItemStack(RegisterItems.CookedSheapMeat), 5);
+        GameRegistry.addShapelessRecipe(new ItemStack(RegisterItems.TomatoSeed, 1), new Object[]{ new ItemStack(RegisterItems.Tomato)});
 
 	}
 }

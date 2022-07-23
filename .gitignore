@@ -40,3 +40,5 @@ config/
 world/
 
 .metadata/
+
+.classpath
