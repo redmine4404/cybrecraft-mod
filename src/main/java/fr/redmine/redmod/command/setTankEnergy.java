@@ -19,7 +19,7 @@ public class setTankEnergy extends CommandBase{
 
 	@Override
 	public String getCommandUsage(ICommandSender p_71518_1_) {
-		return "test";
+		return "this command set the energy in tank";
 	}
 
 	@Override

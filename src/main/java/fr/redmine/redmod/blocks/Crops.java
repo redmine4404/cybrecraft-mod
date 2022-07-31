@@ -68,7 +68,7 @@ public class Crops extends BlockBush implements IGrowable
     @Override
     public int getRenderType()
     {
-        return 1; // Cross like flowers
+        return 1; // render 6 est le mieux pour l'instant
     }
     
     /**

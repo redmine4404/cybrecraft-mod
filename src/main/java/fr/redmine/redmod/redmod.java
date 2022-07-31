@@ -28,6 +28,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import cpw.mods.fml.server.FMLServerHandler;
+import fr.redmine.redmod.command.AddEnergy;
 import fr.redmine.redmod.command.getEnergyHasPlayer;
 import fr.redmine.redmod.command.setTankEnergy;
 import fr.redmine.redmod.command.sethealthCommand;
@@ -124,6 +125,7 @@ public class redmod {
 	   manager.registerCommand(new sethealthCommand());
 	   manager.registerCommand(new setTankEnergy());
 	   manager.registerCommand(new getEnergyHasPlayer());
+	   manager.registerCommand(new AddEnergy());
 	   
 	//  World world = server.getEntityWorld();
 	//	  List entitylist = world.getLoadedEntityList();
